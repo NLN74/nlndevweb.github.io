@@ -142,7 +142,8 @@ form #loca{
     margin-top: 20px;
     margin-bottom: 10px;
     list-style: none;
-   padding-left: 0px;
+    padding-left: 0px;
+    
 }
 
 
@@ -666,22 +667,25 @@ button{
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 30px;
+    
 
 }
 
 
-
-.filtre div{
-    margin-top: 15px;
-  margin-bottom: 25px;
+.icone{
+    margin-bottom: 35px;
 }
+
 
 .filtre_romantique{
     margin-bottom: 15px;
 }
 
+
+
 .filtre a{
     margin-left: 0px;
+    
 
 }
 
