@@ -25,15 +25,15 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    margin-top: 45px;
+    margin-top: 2.813em;
 
 }
 
 header img{
     width: 6.25em;
     height: 2.938em;
-    margin-top: -15px;
-    margin-left: -30px;
+    margin-top: -0.938em;
+    margin-left: -1.875em;
 }
 
 
@@ -42,16 +42,16 @@ header a{
     font-weight: 500;
     text-decoration: none;
     color: black;
-    padding: 25px;
+    padding: 1.563em;
     font-size: 1em;
-    margin-left: 10px;
+    margin-left: 0.625em;
 }
 
 
 
 header a:hover{
-    border-top: 4px solid blue;
-    padding-top: 51px;
+    border-top: 4px solid #0065FC;
+    padding-top: 42px;
     color: #0065FC;
     text-decoration: none;
 }
@@ -62,7 +62,7 @@ header a:hover{
 ********************/
 
 .recherche{
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 button{
@@ -79,10 +79,11 @@ h1{
 }
 
 form{
+   
     border-radius: 15px;
     border: 1px solid #F2F2F2;
-    width: 434px;
-    height: 50px;
+    width: max-content;
+    height: 3.125em;
     padding: 0px;
     display: flex;
     
@@ -102,9 +103,9 @@ form #loca{
 .bar_search{
     padding: 16px;
     border: none;
-    width: 235px;
+    width: 14.688em;
     padding-bottom: 10px;
-    width: 240px;
+    width: 15em;
 
 }
 
@@ -120,6 +121,7 @@ form #loca{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     height: 52px;
+    margin-left: 55px;
    
 }
 
@@ -228,6 +230,7 @@ form #loca{
 .recherche p:last-child{
      font-size: 16px;
    display: flex;
+   margin-top: 30px;
 }
 
 
@@ -240,14 +243,16 @@ form #loca{
 /*HEBERGEMENTS à marseille*/
 #hebergements{
     display: flex;
-    justify-content: space-between;
+    
 
 }
 
 .article_hebergements{
-    width: 880px;
+   flex: 2.1;
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin-right: 20px;
+    
   
     
 }
@@ -262,6 +267,8 @@ h2{
 .hebergement_marseille{
     display: flex;
    flex-wrap: wrap;
+   justify-content: space-between;
+   flex-direction: row;
    
 }
 
@@ -270,12 +277,10 @@ h2{
     height: 200px;
     background-color: white;
     border-radius: 20px;
+    margin: auto;
+    margin-top: 30px;
     
 
-}
-
-.margin{
-    margin-left: -15px;
 }
 
 a{
@@ -344,10 +349,10 @@ a:hover{
 /*HEBERGEMENTS les plus populaires*/
 
 aside{
+    flex: 1;
     background-color: #F2F2F2;
-    width: 420px;
-    height: 625px;
     border-radius: 20px;
+    
 }
 
 .hebergement_populaire{
@@ -357,6 +362,7 @@ aside{
 }
 
 .annonce_populaire{
+    display: flex;
     width: 345px;
     height: 145px;
     background-color: white;
@@ -364,11 +370,7 @@ aside{
     box-shadow: 0px 0px 10px rgb(185, 185, 185);
 }
 
-.annonce_populaire a{
-    display: flex;
-    margin-bottom: -25px;
-    
-}
+
 
 
 .annonce_populaire img{
@@ -377,6 +379,8 @@ aside{
     padding: 5px;
     border-start-start-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: center;
+    object-fit: cover;
 }
 
 .annonce_populaire h4{
@@ -548,7 +552,7 @@ footer ul{
 
 footer li{
     padding-bottom: 10px;
-    font-weight: 100px;
+    font-weight: 500;
     font-family: Raleway;
 }
 
@@ -572,7 +576,7 @@ li h4{
 
 /*MEDIA QUERY POUR IPHONE 8*/
 
-@media screen and (min-width:375px) and (max-width:420px) {
+@media screen and (min-width:375px) and (max-width:767px) {
 
 
 
@@ -659,6 +663,7 @@ button{
     padding-left: 17px;
     padding-right: 17px;
     font-size: 15px;
+    margin-left: 30px;
 }
     
 /********FILTRES***********/
@@ -862,3 +867,270 @@ aside{
 
 }
 
+/**Tablette*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        width: 100%;
+        
+    }
+
+
+    header{
+        justify-content: space-around;
+        padding-bottom: 15px;
+    }
+
+    header img{
+        margin-top: -20px;
+        margin-left: 0px;
+    }
+
+    header a:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-top: 10px;
+       }
+
+       h1{
+        margin-left: 10px;
+       
+       }
+
+       .recherche strong{
+        margin-left: 10px;
+       }
+
+       form{
+        margin-left: 10px;
+       }
+
+    .filtre{
+        margin-left: 10px;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 30px;
+        
+    
+    }
+    
+    
+    .icone{
+        margin-bottom: 35px;
+    }
+    
+    
+    .filtre_romantique{
+        margin-bottom: 15px;
+    }
+    
+    
+    
+    .filtre a{
+        margin-left: 0px;
+        
+    
+    }
+
+    .info{
+        margin-left: 10px;
+    }
+
+    #hebergements{
+        flex-direction: column-reverse;
+        
+    }
+
+    aside{
+        margin-right: 0px;
+        border-radius: 30px;
+        margin: 15px;
+        box-shadow: 0px 0px 10px 5px #F2F2F2;
+        padding-bottom: 20px;
+        
+    }
+
+    
+
+    .annonce_populaire{
+        width: 500px;
+        height: 192px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgb(185, 185, 185);
+     
+
+    }
+    
+    
+    .annonce_populaire img{
+        height: 180px;
+        width: 334px;
+        border-start-start-radius: 20px;
+        border-start-end-radius: 20px;
+    }
+
+    .annonce_populaire figcaption{
+        flex-direction: row;
+    }
+
+
+
+
+
+    aside h2:after{
+        padding-left: 470px;
+    }
+
+
+    .article_hebergements{
+        margin-right: 0px;
+        border-radius: 20px;
+        margin: 15px;
+        box-shadow: 0px 0px 10px 5px #F2F2F2;
+        
+    }
+
+    h2{
+        padding-left: 10px;
+    }
+
+
+
+    .article_activites{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+
+ 
+
+#activites h2{
+    padding-left: 10px;
+}
+
+  .activite{
+    margin-bottom: 20px;
+  }
+
+   .deux_activites{
+    margin-bottom: 20px;
+   }
+
+}
+
+
+
+/*petit ecran d'ordinateur*/
+@media screen and (min-width:993px) and (max-width:1400px) {
+
+    .article_activites{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+
+ 
+    .filtre{
+        margin-left: 10px;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 30px;
+        
+    
+    }
+    
+    
+    .icone{
+        margin-bottom: 35px;
+    }
+    
+    
+    .filtre_romantique{
+        margin-bottom: 15px;
+    }
+    
+    
+    
+    .filtre a{
+        margin-left: 0px;
+        
+    
+    }
+
+
+    #hebergements{
+        flex-direction: column-reverse;
+        
+    }
+
+    aside{
+        margin-right: 0px;
+        border-radius: 30px;
+        margin: 15px;
+        box-shadow: 0px 0px 10px 5px #F2F2F2;
+        padding-bottom: 20px;
+        
+    }
+
+    
+
+    .annonce_populaire{
+        width: 500px;
+        height: 192px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgb(185, 185, 185);
+     
+
+    }
+    
+    
+    .annonce_populaire img{
+        height: 180px;
+        width: 334px;
+        border-start-start-radius: 20px;
+        border-start-end-radius: 20px;
+    }
+
+    .annonce_populaire figcaption{
+        flex-direction: row;
+    }
+
+
+
+
+
+    aside h2:after{
+        padding-left: 470px;
+    }
+
+
+    .article_hebergements{
+        margin-right: 0px;
+        border-radius: 20px;
+        margin: 15px;
+        box-shadow: 0px 0px 10px 5px #F2F2F2;
+        
+    }
+
+    h2{
+        padding-left: 10px;
+    }
+
+
+
+
+
+#activites h2{
+    padding-left: 10px;
+}
+
+  .activite{
+    margin-bottom: 20px;
+  }
+
+   .deux_activites{
+    margin-bottom: 20px;
+   }
+
+}
