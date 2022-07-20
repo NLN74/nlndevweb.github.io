@@ -575,7 +575,7 @@ footer ul{
 }
 
 footer li{
-    padding-bottom: 0.625em;
+    padding-bottom: 10px;
     font-weight: 500;
     font-family: Raleway;
 }
@@ -583,7 +583,7 @@ footer li{
 li h4{
     font-weight: bold;
     font-size: 1.125em;
- 
+    margin-bottom: 10px;
 }
 
 
@@ -751,6 +751,7 @@ li h4{
        height: auto;
        border-radius: 0px;
        padding-bottom: 20px;
+       
    }
    
    aside h2{
@@ -764,7 +765,7 @@ li h4{
    }
 
    .annonce_populaire{  
-    
+        margin: auto;
        margin-bottom: 10px;
        width: 90%;
        
@@ -789,6 +790,15 @@ li h4{
    
    /**activite**/
    
+    .groupe_activites{
+        width: 100%;
+    flex-direction: column;
+    }
+
+   #activites{
+    width: 100%;
+   }
+
    #activites h2{
        padding-left: 10px;
    }
@@ -891,11 +901,17 @@ li h4{
  
    footer{
     flex-direction: column;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     
    }
    
    footer div{
     flex-direction: column;
+    width: 100%;
    }
    
   
@@ -1093,6 +1109,11 @@ aside h2::after{
         padding-left: 10px;
     }
     
+    .groupe_activites{
+        width: 100%;
+        flex-direction: column;
+    }
+
     .article_activites{
         flex-direction: column;
     }
@@ -1221,6 +1242,7 @@ footer{
 footer div{
     width: 100%;
     margin: auto;
+    
 }
 
 
